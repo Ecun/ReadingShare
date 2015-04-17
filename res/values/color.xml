@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="page_viewer_margin_color">#31506b</color>
+
+</resources>
