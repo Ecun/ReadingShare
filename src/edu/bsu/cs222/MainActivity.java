@@ -128,12 +128,12 @@ public class MainActivity extends FragmentActivity {
 			if(actionId==EditorInfo.IME_ACTION_DONE){
 				BaseFragment fragment=fragmentList.get(currentIndex);
 				String name=etInput.getText().toString().trim();
-				if(TextUtils.isEmpty(name)){
-					return true;
+				if(!TextUtils.isEmpty(name)){
+					if(fragment.add(name)){
+						etInput.setText("");
+					}
 				}
-				if(fragment.add(name)){
-					etInput.setText("");
-				}
+				return true;
 			}
 			return false;
 		}
