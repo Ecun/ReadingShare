@@ -132,7 +132,7 @@ public class MainActivity extends FragmentActivity {
 					return true;
 				}
 				if(fragment.add(name)){
-					enterInput(false);
+					etInput.setText("");
 				}
 			}
 			return false;
